@@ -19,3 +19,18 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+permalink: /:title/
+
+defaults:
+  -
+    scope:
+      path: "_posts/pt" # an empty string here means all files in the project
+    values:
+      layout: "default"
+      lang: "pt"
+  -
+    scope:
+      path: "_posts/en" # an empty string here means all files in the project
+    values:
+      layout: "default"
+      lang: "en"    
